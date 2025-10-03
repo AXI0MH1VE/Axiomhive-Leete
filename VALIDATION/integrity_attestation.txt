@@ -1,0 +1,179 @@
+===============================================================================
+             UNIVERSAL HASH VALIDATOR CLI - INTEGRITY ATTESTATION
+===============================================================================
+
+Project: Universal Hash Validator CLI
+Repository: https://github.com/AXI0MH1VE/Axiomhive-Leete
+Attestation Date: October 3, 2025
+Version: 1.0 (Initial Release)
+
+===============================================================================
+                              ATTESTATION STATEMENT
+===============================================================================
+
+I, the maintainer of this project, hereby attest that:
+
+1. CODE INTEGRITY
+   - All code has been written to the best of my ability
+   - No malicious functionality has been intentionally introduced
+   - All dependencies are limited to Python standard library
+   - Code follows documented specifications
+
+2. VERIFIABILITY
+   - All file operations are read-only (no modifications to input files)
+   - All hash calculations use standard Python hashlib module
+   - All code is open source and publicly auditable
+   - No network connections or external API calls are made
+
+3. SECURITY PRACTICES
+   - Input validation is performed on all user inputs
+   - Error handling is explicit and informative
+   - No sensitive data is stored or transmitted
+   - Tool operates entirely offline
+
+4. REPRODUCIBILITY
+   - Given the same input file, the tool will always produce the same hash
+   - Results are deterministic and platform-independent
+   - No randomness or time-dependent factors affect output
+
+===============================================================================
+                            FILE MANIFEST AND HASHES
+===============================================================================
+
+The following files comprise this release:
+
+ARTIFACTS/hash_validator.py
+  Purpose: Core hash validation CLI tool
+  Language: Python 3
+  Dependencies: Standard library only (hashlib, sys, argparse, pathlib)
+
+ARTIFACTS/requirements.txt
+  Purpose: Document dependencies (none required for core functionality)
+  Note: All dependencies are Python standard library
+
+PRINCIPLES.md
+  Purpose: Document guiding principles for project development
+  Contents: Design philosophy, security considerations, coding standards
+
+STRATEGY.md
+  Purpose: Deployment and usage strategy documentation
+  Contents: Installation options, use cases, integration patterns
+
+DEPLOYMENT.md
+  Purpose: Production deployment guide
+  Contents: Environment setup, security hardening, troubleshooting
+
+VALIDATION/integrity_attestation.txt
+  Purpose: This attestation document
+  Contents: Integrity claims, security commitments, verification procedures
+
+VALIDATION/ci/test_script.sh
+  Purpose: Automated testing script
+  Contents: Integration tests, hash verification tests
+
+===============================================================================
+                           VERIFICATION PROCEDURES
+===============================================================================
+
+To verify the integrity of this project:
+
+1. MANUAL CODE REVIEW
+   - Read through hash_validator.py (< 200 lines)
+   - Verify no network operations
+   - Verify no file write operations (except stdout)
+   - Verify uses only Python standard library
+
+2. AUTOMATED TESTING
+   - Run: bash VALIDATION/ci/test_script.sh
+   - All tests should pass
+   - Review test output for anomalies
+
+3. HASH VERIFICATION
+   - Calculate hashes of all project files
+   - Compare against published hashes (see repository releases)
+   - Any discrepancy indicates potential tampering
+
+4. COMMIT SIGNATURE VERIFICATION (if available)
+   - Run: git log --show-signature
+   - Verify commits are signed by trusted key
+   - Check for commit signature chain of trust
+
+===============================================================================
+                              THREAT MODEL
+===============================================================================
+
+This tool is designed to resist the following threats:
+
+1. SUPPLY CHAIN ATTACKS
+   - Mitigation: No external dependencies beyond Python standard library
+   - Mitigation: All code is publicly auditable
+   - Mitigation: Tool can be run offline
+
+2. FILE TAMPERING
+   - Mitigation: Tool detects tampering through hash mismatches
+   - Mitigation: Supports multiple hash algorithms (defense in depth)
+   - Mitigation: Results are deterministic and reproducible
+
+3. MALICIOUS CODE INJECTION
+   - Mitigation: Tool performs no eval() or exec() operations
+   - Mitigation: No dynamic code loading
+   - Mitigation: Input validation on all user inputs
+
+4. DATA EXFILTRATION
+   - Mitigation: No network operations whatsoever
+   - Mitigation: No logging to external services
+   - Mitigation: All operations are local
+
+===============================================================================
+                           KNOWN LIMITATIONS
+===============================================================================
+
+1. This tool verifies file integrity but does not provide authentication
+   - Hash matches indicate identical content, not trusted origin
+   - Use GPG signatures or other authentication mechanisms for trust
+
+2. This tool is not a substitute for malware scanning
+   - Hashes verify integrity, not safety
+   - A file can have correct hash but still contain malware
+
+3. This tool relies on Python's hashlib implementation
+   - If Python's hashlib is compromised, results may be unreliable
+   - Consider using multiple independent tools for critical verification
+
+4. This tool does not prevent TOCTOU (Time-of-Check-Time-of-Use) attacks
+   - Hash is calculated at one point in time
+   - File could be modified between verification and use
+   - Use file permissions and access controls to prevent modifications
+
+===============================================================================
+                            REPORTING ISSUES
+===============================================================================
+
+If you discover any security issues or integrity concerns:
+
+1. DO NOT disclose publicly until maintainer has been notified
+2. Report via GitHub Issues or direct email to maintainer
+3. Provide detailed description and steps to reproduce
+4. Include any relevant logs or error messages
+
+Security issues will be addressed with highest priority.
+
+===============================================================================
+                              REVISION HISTORY
+===============================================================================
+
+Version 1.0 - October 3, 2025
+  - Initial release
+  - Core functionality: MD5, SHA1, SHA256, SHA512
+  - Verification mode with auto-detect
+  - Command-line interface
+  - Zero external dependencies
+
+===============================================================================
+
+End of Attestation
+
+This document is maintained as part of the project repository and should be
+reviewed whenever evaluating the trustworthiness of this tool.
+
+===============================================================================
