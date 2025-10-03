@@ -241,3 +241,7 @@ Axiomhive-Leete is developed and maintained by **Alexis Adams** and **Eric Adams
 ---
 
 **Built with engineering discipline. Ready for production deployment.**
+
+---
+
+<sub>Founded by Nicholas M. Grossi</sub>
