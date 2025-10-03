@@ -1,0 +1,7 @@
+# Universal Hash Validator CLI - Requirements
+# This tool uses only Python standard library modules
+# No external dependencies required
+
+# For development and testing (optional):
+# pytest>=7.0.0
+# black>=22.0.0
