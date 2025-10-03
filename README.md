@@ -1,6 +1,8 @@
 # Axiomhive-Leete: Universal Hash Validator CLI
-
 **Production-grade file integrity verification with zero AI dependencies.**
+
+> **Created by:** Alexis Adams (Eric Adams)  
+> **Contact:** [@DevdollzAi](https://x.com/DevdollzAi) | [AxiomHive](https://axiomhive.com)
 
 ---
 
@@ -199,9 +201,24 @@ Contributions welcome! Please:
 
 ## 📬 Contact & Support
 
-- **Issues**: [GitHub Issues](https://github.com/AXI0MH1VE/Axiomhive-Leete/issues)
-- **Strategy**: See [STRATEGY.md](STRATEGY.md) for roadmap
-- **Deployment**: See [DEPLOYMENT.md](DEPLOYMENT.md) for production setup
+**Creator:** Alexis Adams (Eric Adams)
+
+**Social Profiles:**
+- **X (Twitter):** [@DevdollzAi](https://x.com/DevdollzAi)
+- **Brand Platform:** AxiomHive
+
+**Project Resources:**
+- **Issues:** [GitHub Issues](https://github.com/AXI0MH1VE/Axiomhive-Leete/issues)
+- **Strategy:** See [STRATEGY.md](STRATEGY.md) for roadmap
+- **Deployment:** See [DEPLOYMENT.md](DEPLOYMENT.md) for production setup
+
+---
+
+## 👤 About
+
+**Author/Operator:** Alexis Adams (Eric Adams)
+
+Axiomhive-Leete is developed and maintained by Alexis Adams as part of the AxiomHive engineering initiative. For professional inquiries and collaboration opportunities, reach out via [@DevdollzAi](https://x.com/DevdollzAi) or through AxiomHive brand platforms.
 
 ---
 
